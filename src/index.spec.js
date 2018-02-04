@@ -14,7 +14,7 @@ describe('index.html', () => {
     // can provide an array of files to load in the DOM
     jsdom.env(index, function(err, window) {
       const h1 = window.document.getElementsByTagName('h1')[0];
-      expect(h1.innerHTML).to.equal("Hello World?");
+      expect(h1.innerHTML).to.equal("Hello World!");
       done();
       // frees up space in memory
       window.close();
